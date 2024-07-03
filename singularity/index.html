@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://ecv-lab-kuleuven.github.io/rega-helpful-folks/">
+        <link rel="canonical" href="https://ecv-lab-kuleuven.github.io/singularity/">
       
       
-        <link rel="prev" href="../recreation-with-the-lab/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../rega-parking-and-bicycle-storage/">
+        <link rel="next" href="../docker/">
       
       
       <link rel="icon" href="../images/ECV-cutout.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Rega helpful folks - ecv-wiki</title>
+        <title>Singularity ~ Apptainer - ecv-wiki</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#page-template" class="md-skip">
+        <a href="#singularity-apptainer" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Rega helpful folks
+              Singularity ~ Apptainer
             
           </span>
         </div>
@@ -289,8 +289,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -302,11 +304,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -320,7 +322,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Recently edited
@@ -331,10 +333,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../singularity/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Singularity ~ Apptainer
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -343,6 +365,122 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-singularity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Singularity?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#singularity-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Singularity Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-depth-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      In depth class
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cheatsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cheatsheet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cheatsheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#downloading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Downloading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      From docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-webbiocontainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      From web/biocontainer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-with-dir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running with dir
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running interactive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -422,10 +560,8 @@
       
   
   
-    
   
   
-  
     
     
     
@@ -437,11 +573,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -455,7 +591,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Pages
@@ -1075,28 +1211,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Rega helpful folks
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../rega-helpful-folks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1105,33 +1223,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#page-template" class="md-nav__link">
-    <span class="md-ellipsis">
-      Page template
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1287,6 +1378,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1295,11 +1388,98 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#page-template" class="md-nav__link">
+  <a href="#why-singularity" class="md-nav__link">
     <span class="md-ellipsis">
-      Page template
+      Why Singularity?
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#singularity-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Singularity Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-depth-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      In depth class
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cheatsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cheatsheet
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cheatsheet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#downloading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Downloading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      From docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-webbiocontainer" class="md-nav__link">
+    <span class="md-ellipsis">
+      From web/biocontainer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-with-dir" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running with dir
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running interactive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1318,7 +1498,7 @@
                   
 
   
-    <a href="https://github.com/ECV-Lab-KULeuven/ECV-Lab-KULeuven.github.io/edit/master/docs/rega-helpful-folks.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/ECV-Lab-KULeuven/ECV-Lab-KULeuven.github.io/edit/master/docs/singularity.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1326,11 +1506,57 @@
   
 
 
-  <h1>Rega helpful folks</h1>
+<h1 id="singularity-apptainer">Singularity ~ Apptainer</h1>
+<p>Singularity was created to run complex applications on HPC clusters in a simple, portable, and reproducible way. 
+First developed at Lawrence Berkeley National Laboratory, it quickly became popular at other HPC sites, academic sites, and beyond. 
+The user base continues to expand, with Singularity now used across industry and academia in many areas of work.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Singularity is the tool to run on HPCs, including ours! As you don\'t need root acces to run it (unlike <a href="../docker/">docker</a>).</p>
+</div>
+<h2 id="why-singularity">Why Singularity?</h2>
+<p>Many container platforms are available, but Singularity is focused on:
+•   Verifiable reproducibility and security, using cryptographic signatures, an immutable container image format, and in-memory decryption.
+•   Integration over isolation by default. Easily make use of GPUs, high speed networks, parallel filesystems on a cluster or server by default.
+•   Mobility of compute. The single file SIF container format is easy to transport and share.
+•   A simple, effective security model. You are the same user inside a container as outside, and cannot gain additional privilege on the host system by default. </p>
+<h2 id="singularity-installation">Singularity Installation</h2>
+<p>Singularity is available on most HPCs, but if you want to install it on your own machine, you can follow the instructions on the <a href="https://apptainer.org/docs/admin/main/installation.html">official website</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Singularity is difficult to install on ARM chips (Apple silicon), haven\'t looked into it in detail. </p>
+</div>
+<h2 id="in-depth-class">In depth class</h2>
+<p>For a more in depth class for users with 0 experience, consider the <a href="https://sib-swiss.github.io/containers-introduction-training/latest/course_material/apptainer/">course from SIB</a>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d3kxtzUutjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<h3 id="page-template">Page template</h3>
-<p>This page is a work in progress!</p>
-<p>Come back later to check on it, or <a href="https://github.com/ECV-Lab-KULeuven/ECV-Lab-KULeuven.github.io">contribute</a>.</p>
+<h2 id="cheatsheet">Cheatsheet</h2>
+<h3 id="downloading">Downloading</h3>
+<p>Singularity can take several image formats (e.g. a <code>docker</code> image), and convert them into it’s own <code>.sif</code> format. Unlike <code>docker</code> this image doesn’t live in a local image cache, but it’s stored as an actual file.</p>
+<h3 id="from-docker">From docker</h3>
+<p>You can pull them from docker hub with <code>singularity pull</code>. The syntax is:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>singularity<span class="w"> </span>pull<span class="w"> </span>docker://<span class="o">[</span>USER<span class="w"> </span>NAME<span class="o">]</span>/<span class="o">[</span>IMAGE<span class="w"> </span>NAME<span class="o">]</span>:<span class="o">[</span>TAG<span class="o">]</span>
+</span></code></pre></div></p>
+<h3 id="from-webbiocontainer">From web/biocontainer</h3>
+<p>Given that singularity images are just files, one can download with <code>wget</code>:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>wget<span class="w"> </span>https://depot.galaxyproject.org/singularity/bracken:2.7--py39hc16433a_0
+</span></code></pre></div></p>
+<h3 id="running-files">Running files</h3>
+<p>These <code>.sif</code> files can be run as standalone executables:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>./ubuntu-figlet_v3.sif
+</span></code></pre></div></p>
+<p>Singularity is also different from Docker in the way it handles mounting. By default, Singularity binds your home directory and a number of paths in the root directory to the container. This results in behaviour that is almost like if you are working on the directory structure of the host.</p>
+<h3 id="running-with-dir">Running with dir</h3>
+<p>It depends on the singularity settings whether most directories are mounted by default to the container. If your directory is not mounted, you can do that with the <code>--bind</code> option of <code>singularity exec</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>singularity<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--bind<span class="w"> </span>/my/dir/to/mount/<span class="w"> </span><span class="o">[</span>IMAGE<span class="w"> </span>NAME<span class="o">]</span>.sif<span class="w"> </span><span class="o">[</span>COMMAND<span class="o">]</span>
+</span></code></pre></div>
+<p>Running the command <code>pwd</code> (full name of current working directory) will therefore result in a path on the host machine:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>./ubuntu-figlet_v3.sif<span class="w"> </span><span class="nb">pwd</span>
+</span></code></pre></div>
+<h3 id="running-interactive">Running interactive</h3>
+<p>If you want to debug or inspect an image, it can be helpful to have a shell inside the container. You can do that with <code>singularity shell</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>singularity<span class="w"> </span>shell<span class="w"> </span>ubuntu-figlet_v3.sif
+</span></code></pre></div>
 
 
 
@@ -1351,7 +1577,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-05-30T06:35:07+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-30</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-07-02T16:02:31+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-07-02</span>
   </span>
 
     
@@ -1362,13 +1588,12 @@
   <span class="md-source-file__fact">
     <span class="md-icon" title="Contributors">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.536 5.536 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13v-1.75M0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20H0m24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9V20Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"/></svg>
       
     </span>
     <nav>
       
-        <a href="mailto:joonklaps@gmail.com">Joon-Klaps</a>, 
-        <a href="mailto:barney.potter.24@gmail.com">Barney</a>
+        <a href="mailto:joonklaps@gmail.com">Joon-Klaps</a>
     </nav>
   </span>
 

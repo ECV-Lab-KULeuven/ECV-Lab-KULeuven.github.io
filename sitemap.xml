@@ -176,6 +176,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ecv-lab-kuleuven.github.io/singularity/</loc>
+         <lastmod>2024-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ecv-lab-kuleuven.github.io/tempest/</loc>
          <lastmod>2024-07-03</lastmod>
          <changefreq>daily</changefreq>

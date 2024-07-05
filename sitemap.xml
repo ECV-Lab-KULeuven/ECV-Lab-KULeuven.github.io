@@ -116,6 +116,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ecv-lab-kuleuven.github.io/map/</loc>
+         <lastmod>2024-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ecv-lab-kuleuven.github.io/maximum-likelihood-phylogenetics/</loc>
          <lastmod>2024-07-05</lastmod>
          <changefreq>daily</changefreq>

@@ -33,4 +33,64 @@
         display: block;
         margin: 0 auto;
     }
+    .legend-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .leaflet-container {
+        height: 400px;
+        width: 600px;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+    }
+
+    .marker-pin {
+        width: 30px;
+        height: 30px;
+        border-radius: 50% 50% 50% 0;
+        background: #c30b82;
+        position: absolute;
+        transform: rotate(-45deg);
+        left: 50%;
+        top: 50%;
+        margin: -15px 0 0 -15px;
+    }
+
+    .marker-pin::after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        margin: 3px 0 0 3px;
+        background: #fff;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .custom-div-icon i {
+        position: absolute;
+        width: 17px;
+        font-size: 17px;
+        top: 2px;
+        left: 0;
+        right: 0;
+        margin: 10px auto;
+        text-align: center;
+    }
+    
+    .marker-text {
+        position: absolute;
+        top: -12px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        padding: 2px 5px;
+        border-radius: 3px;
+        white-space: nowrap;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.2;
+    }
 }

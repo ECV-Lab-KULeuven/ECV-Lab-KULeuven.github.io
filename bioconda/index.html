@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://ecv-lab-kuleuven.github.io/running-beast/">
+        <link rel="canonical" href="https://ecv-lab-kuleuven.github.io/bioconda/">
       
       
-        <link rel="prev" href="../registration-with-ku-leuven/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../tempest/">
+        <link rel="next" href="../colors/">
       
       
       <link rel="icon" href="../images/ECV-cutout.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Running - Beast - ecv-wiki</title>
+        <title>Contributing to Bioconda - ecv-wiki</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#running-beast" class="md-skip">
+        <a href="#contributing-to-bioconda" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Running - Beast
+              Contributing to Bioconda
             
           </span>
         </div>
@@ -293,8 +293,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -306,11 +308,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -324,7 +326,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Recently edited
@@ -335,10 +337,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../bioconda/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -347,6 +358,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -468,10 +480,8 @@
       
   
   
-    
   
   
-  
     
     
     
@@ -483,11 +493,11 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -501,7 +511,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Pages
@@ -1142,19 +1152,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../running-beast/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1163,7 +1164,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1293,7 +1293,7 @@
                   
 
   
-    <a href="https://github.com/ECV-Lab-KULeuven/ECV-Lab-KULeuven.github.io/edit/master/docs/running-beast.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/ECV-Lab-KULeuven/ECV-Lab-KULeuven.github.io/edit/master/docs/bioconda.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1301,8 +1301,15 @@
   
 
 
-<h1 id="running-beast">Running - Beast</h1>
-<p>Running beast is easy no?</p>
+<h1 id="contributing-to-bioconda">Contributing to Bioconda</h1>
+<p>Adding to Bioconda is a great way to distribute your software, however you can get lost on where to start and what every variable of the recipe means.</p>
+<p>Here are three very good guidelines on how to write &amp; maintain a Bioconda recipe:</p>
+<ol>
+<li><a href="https://ubinfie.github.io/2024/08/16/adding-to-bioconda-quickguide.html">Adding bioinformatic software to Bioconda - a reference guide</a></li>
+<li><a href="https://ubinfie.github.io/2024/08/16/debugging-bioconda-build-quickguide.html">Debugging a Bioconda build - a reference guide</a></li>
+<li><a href="https://ubinfie.github.io/2024/08/16/updating-bioconda-recipe-quickguide.html">Updating bioinformatic software on Bioconda - a reference guide</a></li>
+</ol>
+<p>These guides are written by the <a href="https://ubinfie.github.io/">µbinfie (The microbial bioinformatics community, on github!)</a> a microbioinformatics community with long-time contributors &amp; maintainers of Bioconda and other bioinformatics tools.</p>
 
 
 
@@ -1323,7 +1330,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-05-30T10:06:36+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-05-30</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-09-11T15:22:40+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-11</span>
   </span>
 
     
@@ -1334,13 +1341,12 @@
   <span class="md-source-file__fact">
     <span class="md-icon" title="Contributors">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
       
     </span>
     <nav>
       
-        <a href="mailto:joonklaps@gmail.com">Joon-Klaps</a>, 
-        <a href="mailto:barney.potter.24@gmail.com">Barney</a>
+        <a href="mailto:joon.klaps@kuleuven.be">Joon-Klaps</a>
     </nav>
   </span>
 

@@ -1375,13 +1375,9 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>singularity<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>--nv<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>-B<span class="w"> </span><span class="nv">$VSC_DATA</span>:<span class="nv">$VSC_DATA</span><span class="w"> </span>-B<span class="w"> </span><span class="nv">$VSC_STAGING</span>:<span class="nv">$VSC_STAGING</span><span class="w"> </span>-B<span class="w"> </span><span class="nv">$VSC_SCRATCH</span>:<span class="nv">$VSC_SCRATCH</span><span class="w"> </span>-B<span class="w"> </span><span class="nv">$VSC_HOME</span>:<span class="nv">$VSC_HOME</span><span class="w"> </span>-B<span class="w"> </span><span class="nv">$PWD</span><span class="w"> </span><span class="se">\ </span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>docker://quay.io/broadinstitute/beast-beagle-cuda:v1.10.5pre_thorney_0.1.2<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>docker://quay.io/broadinstitute/beast-beagle-cuda:v10.5.0_beta3<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>beast<span class="w"> </span>-beagle_info
 </span></code></pre></div>
-<div class="admonition danger">
-<p class="admonition-title">Danger</p>
-<p>On the <code>dedicated_rega_gpu</code> it doesn't work. gpu_p100 it does. </p>
-</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>All these <code>-B</code> statements are to bind the directories to the container. Meaning, the container can access the directories on the host machine.</p>
@@ -1421,7 +1417,7 @@ Better yet, set up a singularity cache directory.
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-07-05T07:08:28+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-07-05</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-09-17T11:00:27+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-09-17</span>
   </span>
 
     

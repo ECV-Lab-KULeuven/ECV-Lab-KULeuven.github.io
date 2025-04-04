@@ -78,9 +78,9 @@
         right: 0;
         margin: 10px auto;
         text-align: center;
-        color: black; 
+        color: black;
     }
-    
+
     .marker-text {
         position: absolute;
         top: -12px; /* Adjust as needed */
@@ -93,6 +93,6 @@
         text-align: center;
         font-size: 12px;
         line-height: 1.2;
-        color: black; 
+        color: black;
     }
 }

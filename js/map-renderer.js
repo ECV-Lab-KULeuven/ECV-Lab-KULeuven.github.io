@@ -72,7 +72,7 @@ async function parseMapData(data) {
         } else if (line.startsWith("zoom:")) {
             zoom = parseInt(line.split(":")[1]);
         } else {
-            const [name, type, lat, lng, url] = line.split(",").map((s) => s.trim()); 
+            const [name, type, lat, lng, url] = line.split(",").map((s) => s.trim());
             markers.push({ name, lat, lng, type, url});
         }
     }

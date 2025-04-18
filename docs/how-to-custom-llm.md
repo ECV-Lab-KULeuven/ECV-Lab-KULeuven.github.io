@@ -34,12 +34,17 @@ ATM, the most popular model is `gemma3` from google.
 
 With this command you'll download the model, it's 8GB, it'll take a while. Go for a coffee or tell Joon you're downloading AI.
 ```bash
-ollama run gemma3:12b
+ollama pull gemma3:12b
 ```
 !!! info
     Congrats! You are now running a large language model locally. You can ask it anything you want, and it will respond in real-time, the larger the model, the longer it takes to load, but the better the results.
 
 Test the model:
+```bash
+$ollama run gemma3:12b
+>>> Type anything \bye to exit
+```
+
 ```txt
 >>> "What is the capital of Belgium?"
 The capital of Belgium is **Brussels**.

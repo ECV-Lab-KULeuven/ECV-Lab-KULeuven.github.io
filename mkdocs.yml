@@ -45,6 +45,7 @@ nav:
 
     - Technical Guides:
         - HPC Getting Started: hpc-getting-started.md
+        - How to local LLM: how-to-custom-llm.md
         - Colors: colors.md
         - GitHub Primer: github-primer.md
         - Docker: docker.md

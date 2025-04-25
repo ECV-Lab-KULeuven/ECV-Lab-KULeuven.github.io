@@ -90,3 +90,12 @@ There is a video guide of the developer from a year ago, so now there are much m
 2. Ask a question and upload a file along with it. Files get stored into the app.
 
 ![Joon's nice interaction](./images/QAofafile.png)
+
+## Step 6: Realise it's not an easy task to let a LLM study your doc
+
+By default, these anythingLLM is configured to go easy on using tokens. To get better results, they have a [dedicated section on their docs](https://docs.anythingllm.com/llm-not-using-my-docs) that goes into more depth on tweaking the configuration to only use the document. In our case, we are using local LLM to spend our tokens more generously. 
+
+In summary, their final solution is to pin the document, which will always add the entire document to your prompt. 
+
+<iframe width="560" height="315" src="https://docs.anythingllm.com/_next/image?url=%2Fimages%2Ffaq%2Fllm-not-using-my-docs%2Fdocument-pinning.png&w=1920&q=100" title="imagefrom anythningllm"></iframe>
+

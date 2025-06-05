@@ -6,4 +6,4 @@
 
 - Register the mission/travel [`KU Loket > Personnel > Register mission`](https://webp11.aps.kuleuven.be/sap/bc/ui2/flp#zr_0055-display)
 
-- Book it ✈️ [OMNIA BOOKING TOOL](https://www.gtp-marketplace.com/identity/d27dfcd8959f4f89908110923cd31b49/Acs){ .md-button }
+- Book it with omnia ✈️ [OMNIA BOOKING TOOL](https://www.gtp-marketplace.com/identity/d27dfcd8959f4f89908110923cd31b49/Acs){ .md-button }

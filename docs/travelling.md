@@ -11,4 +11,4 @@
 [OMNIA BOOKING TOOL](https://www.gtp-marketplace.com/identity/d27dfcd8959f4f89908110923cd31b49/Acs){ .md-button }
 
 !!! warning "Omnia Deprecated from 1 October 2025"
-  (Omnia booking tool, will change from 1-10-2025 to Diversity Travel)
+    Omnia booking tool, will change from 1-10-2025 to Diversity Travel

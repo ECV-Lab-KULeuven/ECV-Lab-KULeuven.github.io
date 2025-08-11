@@ -1,5 +1,8 @@
 # Singularity ~ Apptainer
 
+!!! abstract "One sentence abstraction"
+    Singularity is a container platform designed for high-performance computing (HPC) that packages entire software environments into portable, reproducible images, allowing you to run applications seamlessly across different systems
+
 Singularity was created to run complex applications on HPC clusters in a simple, portable, and reproducible way. 
 First developed at Lawrence Berkeley National Laboratory, it quickly became popular at other HPC sites, academic sites, and beyond. 
 The user base continues to expand, with Singularity now used across industry and academia in many areas of work.
@@ -68,4 +71,73 @@ If you want to debug or inspect an image, it can be helpful to have a shell insi
 
 ```bash
 singularity shell ubuntu-figlet_v3.sif
+```
+
+# Example 
+
+This is how Joon runs his beast analyses on the HPC. 
+```bash 
+#!/bin/bash
+#SBATCH --clusters=genius
+#SBATCH --account="lp_phylogeo_inf_gpu"
+#SBATCH --mail-type="END,FAIL,TIME_LIMIT"
+#SBATCH --mail-user="joon.klaps@kuleuven.be"
+#SBATCH --partition=gpu_p100_long
+#SBATCH --gres=gpu:2
+#SBATCH --gpus-per-node=2
+#SBATCH --ntasks=18
+#SBATCH --mem 170000M
+#SBATCH --time="168:00:00"
+
+####################################
+##### Run a beast analysis ######
+####################################
+
+#### How to run: ####
+# sbatch --export=ALL,ARGS='' gpu_example.slurm
+
+# write a function that catches any errors
+abort()
+{
+    echo >&2 '
+***************
+*** ABORTED ***
+***************
+'
+    echo "An error occurred. Exiting..." >&2
+    exit 1
+}
+
+set -e
+trap 'abort' 0
+
+# write some cluster metadata to the error and output files
+hostname >&2
+echo $0 >&2
+printf START >&2; uptime >&2
+date >&2
+
+module load cluster/genius/gpu_p100_long
+module load CUDA
+
+singularity exec --nv -B $VSC_DATA:$VSC_DATA -B $VSC_STAGING:$VSC_STAGING -B $VSC_SCRATCH:$VSC_SCRATCH -B $VSC_HOME:$VSC_HOME -B $PWD docker://jklaps/beast-beagle-cuda:v10.5.0-beta5 \
+    beast \
+    -beagle_GPU \
+    -beagle_order 1 \
+    -working \
+    -save_stem Coronaviridae \
+    Coronaviridae.xml \
+    > Coronaviridae.beast.out
+
+# write some cluster metadata to the error and output files
+printf END >&2; uptime >&2
+
+trap : 0
+
+echo >&2 '
+************
+*** DONE ***
+************
+'
+
 ```

@@ -2,12 +2,20 @@
 
 [Complete KU Leuven travel page](https://admin.kuleuven.be/td/aankoop/associatienet/en/contracts/travel/business-travel)
 
-## OMNIA
-
-!!! warning "Omnia Deprecated from 1 October 2025"
-    Omnia booking tool, will change from 1-10-2025 to Diversity Travel
-
+For every booking, a __purchase order number__ is required and all business __trips must be registered in KU Loket__.
 - Register the mission/travel [`KU Loket > Personnel > Register mission`](https://webp11.aps.kuleuven.be/sap/bc/ui2/flp#zr_0055-display)
+
+!!! warning "Which one?"
+    - KUL money > DIVERSITY TRAVEL
+    - FWO money > Omnia
+
+## DIVERSTY TRAVEL
+
+[DIVERSITY TRAVEL BOOKING TOOL](https://idp2.diversitytravel.com/serviceprovider/initiatesso/kuleuven){ .md-button }
+
+[Read the full page](https://admin.kuleuven.be/td/aankoop/associatienet/contracten/reiskosten/zakenreizendgi) on what's new since 1st of October 2025
+
+## OMNIA - FWO MONEY
 
 - Book it with omnia ✈️
 

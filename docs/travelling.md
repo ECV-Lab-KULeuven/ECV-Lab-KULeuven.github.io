@@ -3,6 +3,7 @@
 [Complete KU Leuven travel page](https://admin.kuleuven.be/td/aankoop/associatienet/en/contracts/travel/business-travel)
 
 For every booking, a __purchase order number__ is required and all business __trips must be registered in KU Loket__.
+
 - Register the mission/travel [`KU Loket > Personnel > Register mission`](https://webp11.aps.kuleuven.be/sap/bc/ui2/flp#zr_0055-display)
 
 !!! warning "Which one?"
